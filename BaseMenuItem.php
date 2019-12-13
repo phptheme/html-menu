@@ -95,7 +95,7 @@ abstract class BaseMenuItem extends Tag
 
         $class = static::LINK;
 
-        return $class::factory($linkOptions);
+        return new $class($linkOptions);
     }
 
     protected function createSubmenu(array $options = [])
@@ -104,7 +104,7 @@ abstract class BaseMenuItem extends Tag
 
         $class = static::SUBMENU;
 
-        return $class::factory($options);
+        return new $class($options);
     }
 
     public function getSubmenu()

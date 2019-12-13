@@ -32,7 +32,7 @@ abstract class BaseMenu extends Tag
 
         $class = static::MENU_ITEM;
 
-        return $class::factory($options);
+        return new $class($options);
     }
 
     protected function itemIsActive($item)
