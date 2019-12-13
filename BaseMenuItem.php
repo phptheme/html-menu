@@ -4,11 +4,9 @@
  * @license MIT
  * @link http://getphptheme.com
  */
-namespace PhpTheme\Menu;
+namespace PhpTheme\Html;
 
-use PhpTheme\Html\HtmlHelper;
-
-abstract class BaseMenuItem extends \PhpTheme\Html\Tag
+abstract class BaseMenuItem extends Tag
 {
 
     const LINK = Link::class;

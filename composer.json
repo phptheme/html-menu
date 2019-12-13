@@ -1,9 +1,9 @@
 {
-    "name": "phptheme/menu",
+    "name": "phptheme/html-menu",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "PhpTheme\\Menu\\" : ""
+            "PhpTheme\\Html\\" : ""
         }
     },
     "require": {

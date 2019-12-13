@@ -4,7 +4,7 @@
  * @license MIT
  * @link http://getphptheme.com
  */
-namespace PhpTheme\Menu;
+namespace PhpTheme\Html;
 
 class MenuItem extends BaseMenuItem
 {
