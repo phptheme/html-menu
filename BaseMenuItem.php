@@ -31,6 +31,8 @@ abstract class BaseMenuItem extends Tag
 
     // link
 
+    public $defaultLinkAttributes = [];
+
     public $linkAttributes = [];
 
     public $linkTag = 'a';
@@ -79,7 +81,9 @@ abstract class BaseMenuItem extends Tag
             $linkOptions['iconTemplate'] = $this->iconTemplate;
         }
 
-        $linkOptions = HtmlHelper::mergeOptions($linkOptions, ['attributes' => $this->linkAttributes]);
+        $attributes = HtmlHelper::mergeAttributes($this->defaultLinkAttributes, $this->linkAttributes);
+
+        $linkOptions = HtmlHelper::mergeOptions($linkOptions, ['attributes' => $attributes]);
 
         if ($this->active)
         {
