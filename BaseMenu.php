@@ -6,7 +6,7 @@
  */
 namespace PhpTheme\Html;
 
-abstract class BaseMenu extends Tag
+abstract class BaseMenu extends \PhpTheme\Core\Tag
 {
 
     const MENU_ITEM = MenuItem::class;

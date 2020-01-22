@@ -6,7 +6,7 @@
  */
 namespace PhpTheme\Html;
 
-abstract class BaseMenuItem extends Tag
+abstract class BaseMenuItem extends \PhpTheme\Core\Tag
 {
 
     const LINK = Link::class;
