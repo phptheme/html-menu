@@ -6,6 +6,8 @@
  */
 namespace PhpTheme\Html;
 
+use PhpTheme\Core\Link;
+
 abstract class BaseMenuItem extends \PhpTheme\Core\Tag
 {
 
